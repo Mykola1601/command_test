@@ -286,21 +286,20 @@ def show(text):
             count = counter
     return 'finish '
 
+
 # little HELP
-
-
 def help(_):
     return """ 
     "help" for help 
     "add" for add contact
     "find" for find in book
     "hi" or "hello" for greeting
-    "birthday" to add birthday for exiting contact 
+    "birthday" to add birthday for contact 
     "change" for change number
-    "phone" for look  phone in contact
+    "phone" for look  phone in contact's phones
     "show all" to show all book
-    "show" to show part of book    'show 2' - example
-    "exit" or "close" or "good bye" for exit and save book changes in file
+    "show" to show part of book    example = 'show 2' 
+    "exit" or "close" or "good bye" for exit and save book in file
     """
 
 
@@ -324,8 +323,28 @@ def exit(_):
     return sys.exit('Good bye!\n')
 
 
+# add notes
+def add_note():
+    pass
+
+
+# note_find
+def note_find():
+    pass
+
+
+# notes_show
+def notes_show():
+    pass
+
+
+
+
 # dict for commands
 dic = {
+    "add note": add_note,
+    "notes show": notes_show,
+    "note find": note_find,
     "help": help,
     "find ": find,
     "hi": greeting,
